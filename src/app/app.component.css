@@ -1,0 +1,37 @@
+.shadownBtn{
+    padding: 0%;
+    margin-left: 50%;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    color:aliceblue;
+    cursor: pointer;
+    position: relative;
+}
+.shadownBtn:hover{
+    background-color:#31a07b;
+    transition: 2s ease;
+}
+
+.shadownBtn::before{
+    content: "";
+    position: absolute;
+    left: 0%;
+    top: 10px;
+    background-color: transparent;
+    height: 50%;
+    width: 100%;
+    transform: perspective(1em)
+    rotateX(10deg) scale(1, 0.7);
+    filter: blur();
+    transition: 2s ease;
+}
+
+.shadownBtn::before{
+    background-color: rgb(117, 163, 74);
+    top: 60px;
+}
+
+.activo{
+    background-color: rgb(54, 122, 60);
+}
