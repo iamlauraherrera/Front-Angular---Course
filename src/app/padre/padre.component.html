@@ -1,0 +1,12 @@
+<form [formGroup]="formUsuario" (ngSubmit)="enviarUsuario()">
+    <p>Nombre </p>
+    <input formControlName="nombre">
+    <p> Apellido</p>
+    <input formControlName="apellido">
+    <p> Telefono</p>
+    <input type="number" formControlName="telefono">
+    <p>Email</p>
+    <input formControlName="email">
+    <p></p>
+    <button [disabled]= "formUsuario.invalid" >Enviar datos</button>    
+</form>
